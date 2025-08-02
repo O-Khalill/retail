@@ -1,0 +1,429 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "spartan",sans-serif;
+}
+:root {
+  --primary-color: #088178;
+ 
+}
+header{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e3e6f3;
+  padding: 1.25rem 5rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+header nav ul{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.2rem;
+  flex-wrap: wrap;
+}
+header li{
+   list-style: none;
+}
+header a{
+  text-decoration: none;
+  color: black;
+}
+header a:visited{
+  color: black;
+}
+
+header a:hover ,header a:active{
+  color: var(--primary-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+nav ul img{
+  object-fit: contain;
+  width: 2rem;
+}
+nav ul img:hover{
+  transform: scale(1.1rem);
+  transition: transform 0.3s ease;
+}
+main{
+  background-color:#e3e6f3
+}
+main .section-1{
+  background-image: url('../images/misc/jennie-blackpink-k-3840x2160-10902.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+
+body > main .image-text{
+  text-align: center;
+  padding: 0 5rem;
+}
+body > main .image-text > h4{
+  font-size: 1.5rem;
+}
+body > main .image-text > h2{
+  font-size: 3rem;
+}
+
+body > main .image-text > .green-text{
+  color: var(--primary-color);
+}
+
+body > main .image-text > p{
+  color: #465b52;
+}
+.shop-now-btn{
+  background-color: transparent;
+  background-image: url('../images/misc/shop-now.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: none;
+  padding: 1rem 80px;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.section-2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.card {
+  width: fit-content;
+  height: auto;
+  text-align: center;
+  border: 1px  solid black;
+  box-shadow: 2rem 2rem 4rem rgba(70, 62, 221, 0.1);
+  border-radius: 4px;
+}
+.card h5{
+  margin: 0.8rem;
+  padding: 0.3rem;
+  background-color: peachpuff;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.section-3, .section-6{
+  margin-top: 4rem;
+  text-align: center;
+  overflow:hidden
+}
+.section-3 h2, .section-6 h2{
+  font-size: 3rem;
+}
+.section-3 h3, .section-6 h3{
+  font-size: 1.1rem;
+  color: grey;
+  margin: 1.1rem 0; 
+}
+.section-4, .section-7{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.section-4 div, .section-7 div{
+  width: 20%;
+  text-align: center;
+  border: 1px  solid black;
+  box-shadow: 2rem 2rem 4rem rgba(70, 62, 221, 0.1);
+  margin: 1rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+}
+.section-4 img, .section-7 img {
+  max-width: 100%;
+  min-width: 50%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 1.5rem;
+ 
+}
+.section-5{
+  background-color: #e3e6f3;
+  padding:3rem;
+  height: 100%;
+  background-image: url(../images/misc/Untitled.jpg);
+}
+.section-5 .div-section5{
+  color: white;
+  text-align: center;
+}
+.section-5 h2{
+  font-size: 2rem;
+}
+.section-5 h4{
+  margin: 1rem;
+  font-size: 1.3rem;
+}
+.section-5 span{
+  color: red;
+}
+.section-5 button{
+  color: black;
+  background-color: whtie;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  border-radius: 10%;
+  border-color: transparent;
+}
+.section-5 button:hover{
+  background-color: var(--primary-color);
+  color: white;
+  cursor:pointer
+}
+.section-8{
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+
+}
+.section-8 button{
+  position: relative;
+  color: white;
+  border-color: white;
+  background-color: transparent;
+  font-size: 0.9rem;
+  padding: 0.1rem;
+  top:30%;
+  padding: 0.5rem;
+}
+.section-8 button:hover{
+  background-color: var(--primary-color);
+  border-color: transparent;
+
+}
+.section-8 .div1{
+  background-image: url(../images/misc/b17.jpg);
+  width: 35%;
+  height: 20rem;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.section-8 .div2{
+  display: relative;
+  color: white;
+  width: 35%;
+  height: auto;
+  height: 20rem;
+  background-image: url(../images/misc/b10.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+.section-8 h4, h5, h2 {
+  position: relative;
+  top: 30%;
+  padding: 0.4rem;
+}
+.section-9 {
+  background-image: url(../images/misc/b14.png);
+  background-position: center;
+  margin-top: 10rem;
+  height: 40rem;
+  background-color: rgba(6, 2, 71, 0.9);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 80px;
+}
+.section-9 .box1{
+background-image: url(../images/misc/b7.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+width: 30%;
+height: 40%;
+text-align: center;
+padding: 2rem;
+}
+.section-9 .box2{
+background-image: url(../images/misc/b4.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+width: 30%;
+height: 40%;
+text-align: center;
+padding: 2rem;
+}
+.section-9 .box3{
+background-image: url(../images/misc/b18.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+width: 30%;
+height: 40%;
+text-align: center;
+padding: 2rem;
+}
+.section-9 input{
+  font-size: 1rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  height: 3rem;
+  width: 40rem;
+  padding: 1rem;
+}
+.section-9 button{
+  background-color: var(--primary-color);
+  border-color: transparent;
+  height: 3rem;
+  border-radius: 4px;
+  color: #e3e6f3;
+  padding: 0.7rem;
+  font-weight: bolder;
+  transition: ease-in-out;
+}
+.section-9 button:hover{
+  transform: scale(1.2);
+  background-color: transparent;
+}
+.section-9 span{
+  color: white;
+
+}
+.section-9 .span1{
+  font-size: 2rem;
+}
+.section-9 .span2{
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+.section-p1 {
+  padding: 40px 80px;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #e3e6f3;
+  padding: 3rem 5rem;
+  gap: 2rem;
+}
+
+.footer-col {
+  min-width: 150px;
+}
+
+.footer-col h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.footer-col a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.footer-col p {
+  margin: 0.5rem 0;
+}
+
+.footer .row img {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.footer .copyright {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+
+
+@media (max-width: 768px) and (max-width:412px) {
+ header {
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    position: relative;
+  }
+
+  header nav ul {
+    flex-direction:row;
+    gap: 1rem;
+  }
+
+  header h2 {
+    font-size: 1.5rem;
+  }
+  .section-4, .section-7 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-4 div, .section-7 div {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+  .section-9{
+    flex-direction: column;
+    align-items: center;
+    height: auto; 
+  }
+
+  .section-9 .box1,
+  .section-9 .box2,
+  .section-9 .box3 {
+    width: 90%;
+    height: auto; 
+    margin-bottom: 2rem;
+  }
+
+  .section-9 input {
+    width: 90%;
+  }
+
+  .section-9 button {
+    width: 90%;
+  }
+}
+
+
